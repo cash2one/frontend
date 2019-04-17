@@ -182,6 +182,16 @@ $header-image-size-desktop: 100px;
     }
 }
 
+.fc-container__title__text {
+    &:after {
+        @include mq($from: leftCol) {
+            display: none; // override to fix display issue on containers
+        }
+    }
+}
+
+
+
 .fc-container__header__title--sticky {
     display: block;
     width: 100%;
